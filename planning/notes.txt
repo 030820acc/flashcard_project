@@ -1,0 +1,43 @@
+flashcard app with crud functions and database storage for cards and decks.\
+
+    custom file format for decks??
+    public and private decks?
+
+
+frontend: 
+    colors:
+
+
+    layout ideas:
+        homescreen button looks like cards maybe and account button with little face. 
+
+    screens:
+        login
+        sign up
+        list of all decks
+        editing screen with list of cards and option to flip edit or delete them
+        practice screen
+        account info screen
+        landing screen with example decks. clicking add edit or sign in button will redirect to sign up page
+
+    store vs context/props:
+        context/props ideally we will see how big store gets.
+        will need to use built in reducer. on action call the api to update the db with the new data on a good return update the state with use state.
+        do i need a reducer if i am using use state and returning the whole list of things every time? 
+        it depends on the number of different piece of data i need access to in the component. the api calls will return the data that is pertinent to them but 
+        not the other data in the state from other sources. that will need to all be combined and updated in a reducer. if i only need for example the list of 
+        cards in a deck and i dont need the user i can just make a direct call to the api and use that data and a use state to update the page.
+        if i do need the user and the deck data and the theme settings and everything i will need a reducer.
+
+
+backend:
+    api routes:
+        decks:
+            crude
+        auth:
+            login csrf?
+            signup/create
+            update
+
+
+    
